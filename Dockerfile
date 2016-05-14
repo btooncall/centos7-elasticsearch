@@ -12,7 +12,7 @@ RUN wget -q https://download.elastic.co/elasticsearch/release/org/elasticsearch/
 RUN sed -i 's/^.*cluster.name:.*$/cluster.name: live-elasticsearch-cluster/g' /etc/elasticsearch/elasticsearch.yml
 RUN sed -i 's/^.*path.data:.*$/path.data: \/opt\/elasticsearch-data\//g' /etc/elasticsearch/elasticsearch.yml
 RUN sed -i 's/^.*path.logs:.*$/path.logs: \/opt\/elasticsearch-logs\//g' /etc/elasticsearch/elasticsearch.yml
-RUN sed -i 's/^.*network.host:.*$/network.host: 0.0.0.0 //g' /etc/elasticsearch/elasticsearch.yml
+RUN sed -i 's/^.*network.host:.*$/network.host: 0.0.0.0/g' /etc/elasticsearch/elasticsearch.yml
 
 RUN mkdir -p /opt/elasticsearch-data ; chown -R elasticsearch:elasticsearch /opt/elasticsearch-data
 RUN mkdir -p /opt/elasticsearch-logs ; chown -R elasticsearch:elasticsearch /opt/elasticsearch-logs
