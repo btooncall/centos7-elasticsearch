@@ -2,7 +2,7 @@
 
 
 
-run with : docker run -d -P -v elasticsearch-data:/opt/elasticsearch-data -v elasticsearch-logs:/opt/elasticsearch-logs btooncall/elasticsearch
+run with : docker run -d -P -v elasticsearch-data:/opt/elasticsearch-data -v elasticsearch-logs:/opt/elasticsearch-logs btooncall/centos7-elasticsearch
 
 investigate ports : docker port &lt;container_id&gt;
 
